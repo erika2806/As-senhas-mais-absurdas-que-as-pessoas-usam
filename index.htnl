@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria dos Horrores das Senhas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <header>
+        <h1>ALERTA DE VERGONHA ALHEIA</h1>
+        <p>O museu digital das piores decisões de segurança que a humanidade já tomou.</p>
+    </header>
+
+    <main>
+        <section class="card-container machine-section">
+            <h2>Testador de Absurdos 3000</h2>
+            <p>Digite sua senha ultra-secreta para receber uma avaliação 100% sincera (e possivelmente rude).</p>
+            
+            <div class="input-group">
+                <input type="text" id="password-input" placeholder="Ex: 123456, senha, corinthians..." autocomplete="off">
+                <button id="btn-test">Julgar Senha</button>
+            </div>
+
+            <div id="result-display" class="result-box hidden">
+                <p id="result-status"></p>
+                <p id="result-message"></p>
+            </div>
+        </section>
+
+        <section class="card-container generator-section">
+            <h2>Gerador de Senhas Tão Ruins Quanto</h2>
+            <p>Precisa criar uma conta nova e quer ser hackeado em menos de 2 segundos? Nós geramos a pior senha para você.</p>
+            <button id="btn-generate" class="btn-secondary">Gerar Pior Senha</button>
+            <div id="generated-password" class="generated-box hidden"></div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>🏆 O Top 10 do Desastre</h2>
+            <p>Clique nos cards para entender o tamanho do perigo.</p>
+            <div class="grid-cards" id="grid-cards">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito com ☕, ironia e nenhuma criptografia. Por favor, mude sua senha.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
